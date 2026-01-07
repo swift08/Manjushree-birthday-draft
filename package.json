@@ -1,0 +1,17 @@
+{
+  "name": "birthday-celebration",
+  "version": "1.0.0",
+  "description": "A special birthday celebration website",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "birthday",
+    "celebration",
+    "website"
+  ],
+  "author": "Harshith V Malipatil",
+  "license": "MIT"
+}

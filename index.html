@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A special birthday celebration for Ammu - filled with beautiful memories and heartfelt messages.">
+    <meta name="keywords" content="birthday, celebration, memories, special day">
+    <meta name="author" content="Harshith V Malipatil">
+    <meta name="theme-color" content="#ff6b9d">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Happy Birthday, Ammu! 🎉">
+    <meta property="og:description" content="A special birthday celebration filled with beautiful memories and heartfelt messages.">
+    <meta property="og:image" content="/assets/WhatsApp Image 2026-01-08 at 2.49.04 AM.jpeg">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Happy Birthday Ammu">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Happy Birthday, Ammu! 🎉">
+    <meta name="twitter:description" content="A special birthday celebration filled with beautiful memories and heartfelt messages.">
+    <meta name="twitter:image" content="/assets/WhatsApp Image 2026-01-08 at 2.49.04 AM.jpeg">
+    
+    <title>Happy Birthday, Ammu! 🎉</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎉</text></svg>">
+</head>
+<body>
+    <div class="password-modal" id="passwordModal">
+        <div class="password-container">
+            <div class="password-content">
+                <h2 class="password-title">🔐 Special Access</h2>
+                <p class="password-question">Atleast do u remember the bike which I own and which was your favorite too?</p>
+                <form id="passwordForm" class="password-form">
+                    <input 
+                        type="text" 
+                        id="passwordInput" 
+                        class="password-input" 
+                        placeholder="Enter your answer..."
+                        autocomplete="off"
+                        autofocus
+                    >
+                    <button type="submit" class="password-submit">Enter</button>
+                </form>
+                <p class="password-error" id="passwordError"></p>
+                <p class="experience-note">For better experience open it in laptop or desktop screen</p>
+                <div class="terms-container">
+                    <label class="terms-checkbox-label">
+                        <input type="checkbox" id="termsCheckbox" class="terms-checkbox">
+                        <span class="checkbox-custom"></span>
+                        <span class="terms-text">Terms and Conditions</span>
+                    </label>
+                </div>
+                <div class="terms-popup" id="termsPopup">
+                    <div class="popup-content">
+                        <p>if u feel this as cringe , NVM gotto go wipe ur ass out</p>
+                        <button class="popup-close" id="popupClose">OK</button>
+                    </div>
+                </div>
+                <p class="password-note">This is just because anonymous login should be avoided because of your privacy. My apologies.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cat-loader" id="catLoader">
+        <div class="loader-3d-container">
+            <div class="cat-3d">
+                <div class="cat-face">🐱</div>
+                <div class="cat-body">🐾</div>
+                <div class="cat-tail">✨</div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-word" data-word="Unlocking">Unlocking</span>
+                <span class="loader-word" data-word="Memories">Memories</span>
+                <span class="loader-word" data-word="Magic">Magic</span>
+            </div>
+            <div class="cat-particles">
+                <span class="particle">💕</span>
+                <span class="particle">💖</span>
+                <span class="particle">💗</span>
+                <span class="particle">💝</span>
+                <span class="particle">❤️</span>
+                <span class="particle">💕</span>
+                <span class="particle">💖</span>
+                <span class="particle">💗</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent" style="display: none;">
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-label="Background birthday video">
+            <source src="assets/happy birthday shree.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="animated-gradient"></div>
+        
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+                <h1 class="typewriter" id="typewriter">Happy Birthday, Ammu!</h1>
+                <div class="title-underline"></div>
+            </div>
+            <p class="subtitle">Today is all about celebrating you.</p>
+            <button class="cta-button" onclick="scrollToSection('message')" aria-label="Scroll to message section">
+                <span class="button-text">press</span>
+                <span class="button-shine"></span>
+            </button>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery-header">
+            <h2 class="section-title">You Define What Perfect Means</h2>
+            <div class="title-decoration"></div>
+        </div>
+        <div class="polaroid-grid">
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.08 AM (1).jpeg" alt="Memory 1" loading="lazy" decoding="async">
+                <div class="polaroid-caption">A moment to cherish forever</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.08 AM.jpeg" alt="Memory 2" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Smiles that light up my world</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.09 AM (1).jpeg" alt="Memory 3" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Every second with you is precious</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.09 AM (2).jpeg" alt="Memory 4" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Beautiful memories we've made</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.09 AM (3).jpeg" alt="Memory 5" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Your smile is everything</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.09 AM.jpeg" alt="Memory 6" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Forever grateful for you</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.10 AM.jpeg" alt="Memory 7" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Each photo tells our story</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.11 AM.jpeg" alt="Memory 8" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Moments I'll never forget</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.12 AM.jpeg" alt="Memory 9" loading="lazy" decoding="async">
+                <div class="polaroid-caption">You make everything beautiful</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.13 AM.jpeg" alt="Memory 10" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Precious times together</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.17 AM.jpeg" alt="Memory 11" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Love captured in frames</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.21 AM (1).jpeg" alt="Memory 12" class="face-focus" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Special moments with you</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.21 AM.jpeg" alt="Memory 13" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Memories that warm my heart</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.22 AM (1).jpeg" alt="Memory 14" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Every picture is a treasure</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.22 AM.jpeg" alt="Memory 15" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Beautiful moments together</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.32.23 AM.jpeg" alt="Memory 16" loading="lazy" decoding="async">
+                <div class="polaroid-caption">You're my favorite memory</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.49.03 AM.jpeg" alt="Memory 17" loading="lazy" decoding="async">
+                <div class="polaroid-caption">Forever in my heart</div>
+            </div>
+            <div class="polaroid-card">
+                <img src="assets/WhatsApp Image 2026-01-08 at 2.49.04 AM (1).jpeg" alt="Memory 18" loading="lazy" decoding="async">
+                <div class="polaroid-caption">More beautiful memories</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="message-section" id="message">
+        <video class="message-video" autoplay muted loop playsinline preload="auto" aria-label="Background message video">
+            <source src="assets/WhatsApp Video 2026-01-08 at 2.49.09 AM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="message-overlay"></div>
+        <div class="message-gradient"></div>
+        <div class="message-card glass-card">
+            <div class="card-glow"></div>
+            <h2 class="message-title">Special Message</h2>
+            <div class="message-content">
+                <p class="message-text birthday-wish">
+                    Happy Birthday Ammu. I hope today brings you peace, smiles, and everything you deserve. I just wanted you to know that I still care deeply about you and I'm grateful for the memories we shared. No matter where life takes us, I truly wish you happiness today and always.
+                </p>
+                <p class="message-text">
+                    The deepest heartbreaks aren't caused by words unsaid... but by the moments we believed would happen, and never did.
+                </p>
+                <p class="message-text">
+                    That was the day my heart learned the language of loss. That was the day I realized... Love doesn't always end in heartbreak, Sometimes, it ends in silence.
+                </p>
+                <p class="message-text personal">
+                    Thoda sad and afraid to show my love hehe... but you has been my strength and flex more times than you'll ever realise.
+                </p>
+            </div>
+            <div class="pulsing-hearts">
+                <span class="pulse-heart">❤️</span>
+                <span class="pulse-heart">💕</span>
+                <span class="pulse-heart">💖</span>
+                <span class="pulse-heart">💗</span>
+                <span class="pulse-heart">💝</span>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
